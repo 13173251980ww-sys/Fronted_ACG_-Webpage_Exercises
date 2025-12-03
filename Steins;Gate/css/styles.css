@@ -1,0 +1,383 @@
+/*通用区域*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;}
+
+#page{
+    width: 960px;
+    margin: 0 auto;
+}
+
+a{
+    color: #FFF;}
+
+section{
+    margin-bottom: 100px;
+}
+
+#background{
+    width: 100%;
+    margin-bottom: 30px;}
+/*头部区域*/
+header{
+    width: 100%;}
+/*导航*/
+nav{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    /*层级优先*/
+    z-index: 2000;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    line-height: 30px;
+    font-family: bonx_bold;}
+
+nav a{font-size: 24px;padding: 0 15px;transition: all 0.3s ease-in-out;}
+nav a:hover{color: rgb( 228, 165, 82 );}
+
+/*引入字体*/
+@font-face {
+    font-family: 'bonx_bold';
+    src: url('../fonts/bonx-altbold-webfont.eot');
+    src: url('../fonts/bonx-altbold-webfont.eot_') format('embedded-opentype'),
+    url('../fonts/bonx-altbold-webfont.woff') format('woff'),
+    url('../fonts/bonx-altbold-webfont.ttf') format('truetype'),
+    url('../fonts/bonx-altbold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bonx_medium';
+    src: url('../fonts/bonx-altmedium-webfont.eot');
+    src: url('../fonts/bonx-altmedium-webfont.eot_') format('embedded-opentype'),
+    url('../fonts/bonx-altmedium-webfont.woff') format('woff'),
+    url('../fonts/bonx-altmedium-webfont.ttf') format('truetype'),
+    url('../fonts/bonx-altmedium-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*页面区域*/
+/*视频区域*/
+#video{
+    height: 740px;
+    margin-bottom: 30px;
+}
+
+#video h1{
+    opacity: 0;
+}
+
+#video iframe{
+    margin: 230px 210px 0;
+}
+
+/*产品特色区域*/
+#features{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 30px;
+    padding-left: 510px;
+}
+
+#features h2{
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+    margin-left: -510px;
+    margin-bottom: 125px;
+    color: rgb( 228, 165, 82 );
+    font-family:bonx_medium;
+}
+
+#features h3{
+    font-weight: normal;
+    text-align: center;
+    color: rgb( 228, 165, 82 );
+    font-family:bonx_medium;
+    margin-bottom: 20px;
+    font-size: 31px;
+}
+
+#features dt{
+    font-size: 19px;
+    line-height: 26px;
+}
+
+#features dd{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+/*购物区域*/
+#buy{
+    width: 100%;
+    height: 372px;
+    padding-left: 470px;
+    padding-top: 142px;
+}
+
+#buy a{
+    display: block;
+    width: 510px;
+    height: 46px;
+    padding-left: 300px;
+    padding-top: 15px;
+}
+
+/*页面底部*/
+footer{
+    width: 100%;
+    height: 116px;
+    padding: 50px 0;
+}
+
+footer small{
+    font-size: 12px;
+    color: #867f7f;
+}
+
+/*贴图*/
+#index {
+    background: black url('../images/bg_home.jpg') no-repeat center top;
+}
+#features{
+    background: black url('../images/editions.png') no-repeat left 40px;
+}
+#buy{
+    background: black url('../images/order.png') no-repeat center top;
+}
+
+/*about*/
+#about h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: bonx_medium;
+    color:rgb( 228, 165, 82 );
+    font-weight: normal;
+}
+
+#about p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28.8px;}
+
+#about #background{
+    background: black url('../images/bg_about.jpg') no-repeat center top;
+    height: 707.06px}
+
+/*steins*/
+#about_steins{
+    margin-bottom: 100px}
+
+#about_steins h2{
+    font-weight: normal;}
+
+#about_steins p{
+    margin: 0 98px 30px;
+    text-align: center;}
+
+/*phones*/
+#phone_triggers{
+    height: 289px;
+    box-sizing: border-box;
+    margin-bottom: 100px;}
+
+#phone_triggers p{
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#phonesliders{
+    height: 270px;
+    position: relative;
+    margin-left: 580px;
+    margin-bottom: 100px;
+}
+
+#phonesliders img{
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-bottom: 15px;
+}
+
+#phonesliders p{
+    width: 100%;
+    position: absolute;
+    font-weight: 300;
+    bottom: 0;
+    left:20%;
+}
+
+/*D-mail*/
+#D-mail{
+    text-align: center;
+}
+
+#D-mail p{
+    margin: 0 98px 30px;}
+
+/*time_leap*/
+#time_leap{
+    text-align: center
+}
+
+#time_leap img{
+    width: 640px;
+    height: 300px;
+    margin-bottom: 30px}
+
+#time_leap p{
+    margin: 0 98px 30px;
+    font-weight: normal}
+
+/*story区域*/
+#story #background{
+    height: 803.95px;
+}
+
+#story #background img{
+    width: 100%;
+    height: 100%;
+}
+
+#story h2{
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb( 228, 165, 82 );
+    font-family:bonx_medium;
+}
+
+#story p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28.8px;
+    margin-bottom: 20px;
+}
+
+#Prologue p,#concidence p,#Enemies p,#Across p{
+    float: left;
+    width: 50%;
+}
+
+#Prologue img,#concidence img,#Enemies img,#Across img{
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+/*角色区域*/
+#characters{
+    background: black url('../images/bg_chara.jpg') no-repeat center top;
+}
+
+#characters #background{
+    height: 740px;
+    margin-bottom: 30px;
+}
+#characters h2{
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb( 228, 165, 82 );
+    font-family:bonx_medium;
+}
+
+#characters section{
+    width: 100%;
+    height: 630px;
+    padding-left: 230px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+#characters section h2{
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+    background-image: url("../images/chara/okabe_h.png");
+    background-repeat: no-repeat;}
+
+#characters section blockquote{
+    color: #3b87f9;
+    margin-bottom: 25px;
+}
+
+#characters section p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28.8px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#characters section div{
+    display: flex;
+}
+
+#characters section a{
+    display: block;
+    width: 200px;
+    height: 113px;
+    margin-right: 5px;
+}
+
+#characters section a:nth-of-type(1){
+    background-image: url("../images/chara/okabe_ev1s.jpg");
+}
+#characters section a:nth-of-type(2){
+    background-image: url("../images/chara/okabe_ev2s.jpg");
+}
+
+#okabe{
+    background: black url('../images/chara/okabe_standing.png') no-repeat left top;
+}
+
+#kurisu{
+    background: black url('../images/chara/kurisu_standing.png') no-repeat left top;
+}
+
+#mayuri{
+    background: black url('../images/chara/mayuri_standing.png') no-repeat left top;
+}
+
+#suzuha{
+    background: black url('../images/chara/suzuha_standing.png') no-repeat left top;
+}
+
+#luka{
+    background: black url('../images/chara/luka_standing.png') no-repeat left top;
+}
+
+#faris{
+    background: black url('../images/chara/faris_standing.png') no-repeat left top;
+}
+
+#OKABERINTARO{
+    background: black url('../images/chara/daru_standing.png') no-repeat left top;
+}
+
+#moeka{
+    background: black url('../images/chara/moeka_standing.png') no-repeat left top;
+}
