@@ -1,0 +1,309 @@
+
+.header{
+    width: 100%;
+    height: 78.74px;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    /*水平阴影0 垂直阴影2px 模糊半径4px 阴影半径没有指定，默认是0 阴影颜色*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo a{
+    display: block;
+    width: 250px;
+    height: 46px;
+    font-size: 0;
+    background-image: url("https://www.whisperinteractive.com/images/aboutus/logo_mod_white.png");
+    background-size: contain;
+}
+
+.nav{
+    width: 483.7px;
+    height: 18.75px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul li a{
+    font-size: 18px;
+    color: #333;
+}
+
+.nav ul li a:hover{
+    color: aqua;
+}
+
+.aline{
+    width: 960px;
+    height: 3px;
+    background: url("https://www.whisperinteractive.com/images/aboutus/colorbar_623c2a2.png");
+    overflow: hidden;
+}
+
+.banner{
+    width: 960px;
+    height: 364.8px;
+}
+
+#slides{
+    width: 960px;
+    height: 364.8px;
+    position: relative;
+}
+
+#slides li{
+    left: 0;
+    top: 0;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#slides li img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.resume{
+    margin: 32px;
+}
+
+.resume p{
+    line-height: 1.75em;
+    color: #3c3c3c;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+}
+
+#about .title span,#news .title span{
+    font-size: 32px;
+    color: #3c3c3c;
+}
+
+.dolist{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dolist li{
+    width: 230px;
+}
+
+.dolist img{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+.text{
+    padding: 25.6px 12.8px;
+}
+
+.text dt{
+    font-size: 12.8px;
+    margin-bottom: 12.8px;
+    color: #3c3c3c;
+    text-align: center;
+}
+
+.text dd{
+    font-family: ProximaNova, Arial, "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "\5fae\8f6f\96c5\9ed1", serif;
+    color:#9c9c9c;
+}
+
+.dolist li {
+    transition: all 0.3s;
+}
+
+.dolist li:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+    transition: all 0.3s;
+}
+
+.gallery{
+    position: relative;
+    width: 960px;
+    height: 480px;
+}
+
+.gallery li:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 480px;
+    width: 480px;
+}
+
+.gallery li:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 480px;
+    height: 240px;
+    width: 240px;
+}
+
+.gallery li:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 720px;
+    width: 240px;
+    height: 240px;
+}
+
+.gallery li:nth-child(4){
+    position: absolute;
+    top: 240px;
+    left:480px;
+    width: 480px;
+    height: 240px;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+.gallery li div{
+    color: white;
+    padding: 0 16px;
+    background-color: rgba(0,0,0,0.5);
+
+    opacity: 0;
+    transition: all 1s;
+}
+
+.gallery li:hover div{
+    opacity: 1;
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+.gallery h2{
+    font-size:13px;
+    margin-bottom: 0;
+}
+
+.gallery h2::before,.gallery h2::after{
+    height: 0.64px;
+}
+
+.more .btn{
+    margin: 200px auto;
+    width: 208px;
+    height: 46px;
+}
+
+.more .btn input{
+    width: 100%;
+    height: 100%;
+
+}
+
+.case_partners ul{
+    display: grid;
+    grid-template-columns: 191px 191px 191px 191px;
+    grid-auto-rows: 90px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.case_partners ul li{
+    display: flex;
+    width: 191px;
+    height: 90px;
+    justify-content: center;
+}
+
+.case_partners ul li img{
+    width: 100%;
+    height: 100%;
+}
+
+.copyright .top{
+    box-sizing: border-box;
+    width: 100%;
+    height: 116px;
+    padding: 25px 0;
+    margin: 0 auto;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+
+.copyright .top span{
+    font-size: 14px;
+    line-height: 2em;
+    color: #888888;
+}
+
+.copyright .top a{
+    color: black;
+    line-height: 2em;
+}
+
+.copyright .bottom{
+    width: 100%;
+    height: 64px;
+    background: rgb(33, 33, 33);
+    color: rgb(176, 176, 176);
+    text-align: center;
+    line-height: 2em;
+}
+
+#moreProjects{
+    display: grid;
+    grid-template-columns: 473px 473px;
+    grid-auto-rows: 291px;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#moreProjects li img{
+    width: 100%;
+    height: 195px;
+    background-size: contain;
+}
+
+#moreProjects li a{
+    display: block;
+    height: 96px;
+    padding: 12.8px;
+    background-color: #fffbfb;
+}
+
+#moreProjects li a span{
+    font-size: 12px;
+}
+
+#moreProjects li span:nth-of-type(1){
+    display: block;
+    color: #3c3c3c;
+    margin-bottom: 1em;
+}
+
+#moreProjects li span:nth-of-type(2){
+    color: #9c9c9c;
+}
+
+#moreProjects li{
+    transition: all 1s;
+}
+
+#moreProjects li:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+}
