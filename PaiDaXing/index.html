@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            font-size: 62.5%; /* 1rem = 10px */
+        }
+
+        /* 响应式调整根字体大小 */
+        @media (max-width: 768px) {
+            html {
+                font-size: 55%;
+            }
+            #index .color {
+                width: 90%;
+            }
+            #index #contact {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            #index #contact li {
+                flex: 1;
+                flex-basis: auto;
+                margin: 0.2rem;
+            }
+        }
+
+    </style>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fonts/font_5080835_4tcgeefc02v/iconfont.css">
+    <link rel="stylesheet" href="fonts/font_5080804_haldbngr40q/iconfont.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>派大星工作室</title>
+</head>
+<body id="index">
+    <img src="https://q.qlogo.cn/headimg_dl?dst_uin=428488368&spec=640&img_type=jpg" id="icon">
+
+    <h2>Deliver The Goods</h2>
+
+    <div class="wrapper">
+        <div class="color">
+            <h1>
+                大星科技工作室
+            </h1>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="api"></div>
+    </div>
+
+    <div class="wrapper">
+        <ul id="contact">
+            <li><a href="#">
+                <i class="iconfont icon-QQ"></i>
+                QQ
+            </a></li>
+            <li><a href="#">
+                <i class="iconfont icon-GitHub"></i>
+                GITHUB
+            </a></li>
+            <li><a href="#">
+                <i class="iconfont icon-bilibili"></i>
+                哔哩哔哩
+            </a></li>
+            <li><a href="#">
+                <i class="iconfont icon-tuite"></i>
+                X
+            </a></li>
+            <li><a href="#">
+                <i class="iconfont icon-youxiang"></i>
+                EMAIL
+            </a></li>
+            <li><a href="#">
+                <i class="iconfont icon-sousuo"></i>
+                刷课进度查询
+            </a></li>
+            <li><a href="#">
+                <i class="iconfont icon-aixin"></i>
+                赞助页面
+            </a></li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="friend-links">
+        <span>友情链接：</span>
+        <a href="#">
+            <i class="iconfont icon-fish"></i>
+            凉汐智创
+        </a>
+        <a href="#">
+            <i class="iconfont icon-huojian"></i>
+            少年科技
+        </a>
+    </div>
+
+    <p id="run_time">本站勉强运行: 24天11小时29分15秒</p>
+
+    <footer>
+        <small>
+            ©2025
+            <a href="#">派大星</a>
+        </small>
+    </footer>
+</body>
+    <script src="index.js"></script>
+    <script src="api/api.js"></script>
+</html>

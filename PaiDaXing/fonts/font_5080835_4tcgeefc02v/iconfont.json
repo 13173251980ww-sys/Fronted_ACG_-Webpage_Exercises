@@ -1,0 +1,23 @@
+{
+  "id": "5080835",
+  "name": "派大星2",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "551330",
+      "name": "火箭",
+      "font_class": "huojian",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "27363496",
+      "name": "fish",
+      "font_class": "fish",
+      "unicode": "eb32",
+      "unicode_decimal": 60210
+    }
+  ]
+}
