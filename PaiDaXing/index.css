@@ -192,6 +192,20 @@ h1,h2{
     justify-content: center;
 }
 
+.circle {
+    z-index: -1;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 40rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: radial-gradient(circle,rgba(0,0,0,0.1) 20%, rgba(0, 0, 0, 0.1) 70%);
+    box-shadow: 0 0 5rem rgba(5, 5, 5, 1), 0 0 10rem rgba(10, 10, 10, 0.3);
+    filter: blur(6rem);
+}
+
 #index{
     width: min(119.3rem, 100% - 6.4rem);
     min-height: 95.743rem;
@@ -199,6 +213,7 @@ h1,h2{
     background: #1b1f22;
     text-align: center;
     margin: 0 auto;
+
 }
 
 #index img{
@@ -343,4 +358,9 @@ footer small a{
 
 .icon-fish{
     color: white;
+}
+
+.api{
+    width: auto;
+    height: 5.7rem;
 }
